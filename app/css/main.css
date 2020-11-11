@@ -1144,7 +1144,11 @@ h1 {
 @media only screen and (max-width: 1100px) {
   .main-slide__content {
     margin: 0 0 0 20px;
-    max-width: 400px; } }
+    max-width: 400px; }
+  .section-login__box {
+    max-width: 450px; }
+  .login-item {
+    padding: 30px; } }
 
 @media only screen and (max-width: 992px) {
   .main-slide {
@@ -1161,6 +1165,19 @@ h1 {
     max-width: 313px; } }
 
 /* Small Devices, Tablets */
+@media only screen and (max-width: 930px) {
+  .section-login__box {
+    max-width: none;
+    margin: 0 0 30px; }
+    .section-login__box:last-child {
+      margin: 0; }
+  .section-login__box-info {
+    max-width: none; }
+    .section-login__box-info .box-text {
+      margin: 0 0 20px; }
+      .section-login__box-info .box-text p {
+        margin: 0 0 10px; } }
+
 @media only screen and (max-width: 900px) {
   .sidebar, .links-text, .header-top {
     display: none; }
@@ -1293,7 +1310,11 @@ h1 {
           display: inline-block;
           margin: 0 5px 0 0;
           font-weight: 900;
-          font-family: 'Font Awesome 5 Free'; } }
+          font-family: 'Font Awesome 5 Free'; }
+  .thanks-box {
+    padding: 30px 20px; }
+    .thanks-box p {
+      text-align: center; } }
 
 @media only screen and (max-width: 480px) {
   .col-3 {
@@ -1309,7 +1330,17 @@ h1 {
               order: 1;
       margin: 11px 0 0; }
     .pagination li:first-child a {
-      margin: 0 19px 0 auto; } }
+      margin: 0 19px 0 auto; }
+  .form .button-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .form .button-group .btn {
+      margin: 0 auto 10px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
