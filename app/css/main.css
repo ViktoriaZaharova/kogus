@@ -157,18 +157,29 @@ label {
           justify-content: center;
   text-align: center;
   height: 40px;
-  width: 100%; }
+  width: 100%;
+  border-radius: 20px;
+  text-transform: uppercase; }
 
 .btn-border {
   border: solid 0.7px #f6a525;
-    border-radius: 20px;
   color: #fff;
-  text-transform: uppercase;
   font-size: 14px;
   font-weight: bold; }
   .btn-border:hover {
     background: #f6a525;
     color: #990100; }
+
+.btn-accent {
+  background: #f6a525;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold; }
+  .btn-accent:hover {
+    background: #990100; }
+
+.links {
+  color: #838383; }
 
 .btn-border-orange {
   color: #f6a525; }
@@ -944,6 +955,95 @@ h1 {
     font-weight: bold;
     color: #363636;
     margin: 0 auto 20px; }
+
+.button-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .button-group .btn {
+    max-width: 170px; }
+
+.section-login .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.section-login h3 {
+  position: relative;
+  margin: 0 0 28px;
+  padding: 0 0 20px;
+  color: #363636;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase; }
+  .section-login h3:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #f6a525;
+    width: 50px;
+    height: 2px; }
+
+.section-login__box {
+  max-width: 569px;
+  width: 100%; }
+
+.section-login__box-info {
+  max-width: 422px;
+  width: 100%;
+  color: #838383;
+  font-size: 15px; }
+  .section-login__box-info .box-text {
+    margin: 0 0 57px; }
+    .section-login__box-info .box-text p {
+      margin: 0 0 30px; }
+      .section-login__box-info .box-text p:last-child {
+        margin: 0; }
+  .section-login__box-info .btn {
+    max-width: 170px;
+    color: #363636;
+    font-size: 13px; }
+    .section-login__box-info .btn i {
+      margin: 0 0 0 20px; }
+
+.login-item {
+  background: #f5f5f5;
+  width: 100%;
+  padding: 52px 70px 47px; }
+  .login-item h4 {
+    margin: 0 0 17px; }
+
+.form input {
+  padding: 0 21px;
+  height: 50px;
+  color: #838383;
+  font-size: 15px; }
+  .form input::-webkit-input-placeholder {
+    color: #838383; }
+  .form input::-moz-placeholder {
+    color: #838383; }
+  .form input::-ms-input-placeholder {
+    color: #838383; }
+  .form input::placeholder {
+    color: #838383; }
+
+.form label {
+  margin: 0 0 20px; }
+  .form label:last-child {
+    margin: 0; }
+
+.form .button-group {
+  margin: 40px 0 0; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

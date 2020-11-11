@@ -88,11 +88,22 @@
 <div class="section-login mb-100">
     <div class="container">
         <div class="section-login__box">
-            <h2>I’m already a customer</h2>
+            <h3>I’m already a customer</h3>
+            <div class="login-item">
+                <h4>Log in with your email address and password:</h4>
+                <form method="post" class="form">
+                    <label><input type="text" placeholder="Login" name="login"></label>
+                    <label><input type="text" placeholder="Password" name="password"></label>
+                    <div class="button-group">
+                        <button type="submit" class="btn btn-accent">Login</button>
+                        <a href="#" class="links">Did you forget your password?</a>
+                    </div>
+                </form>
+            </div>
         </div>
 
-        <div class="section-login__box">
-            <h2>I’m a new customer</h2>
+        <div class="section-login__box-info">
+            <h3>I’m a new customer</h3>
             <div class="box-text">
                 <p>KOGUS operates strictly on a B2B basis and deals only with trade customers. In order to protect our
                     existing customers, we ask for information to establish that applicants are trading.</p>
@@ -100,6 +111,10 @@
                 <p>After checking your registration, you will be informed by e-mail about the status of your application
                     and upon completion of your registration, your B2B access data.</p>
             </div>
+
+            <a href="#" class="btn btn-border">
+                Next <i class="fas fa-arrow-right"></i>
+            </a>
         </div>
     </div>
 </div>
