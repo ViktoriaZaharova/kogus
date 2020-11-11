@@ -109,6 +109,9 @@
   .header-center
     padding: 13px 0 9px
 
+  .pagination
+    justify-content: center
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 660px)
@@ -144,6 +147,7 @@
   .contacts-wrapper
     padding: 39px 0
 
+
 @media only screen and (max-width : 575px)
   .advantages-box
     max-width: 100%
@@ -157,9 +161,48 @@
   .menu-footer
     margin: 37px auto 0
 
+  .col-3
+    width: 50%
+
+  h1
+    text-align: center
+    font-size: 26px
+    margin: 0 auto 20px
+
+  .section-home
+    padding: 65px 0 60px
+    margin: 0 0 60px
+
+  .breadcrumbs
+    justify-content: center
+    li
+      display: none
+      &:last-child
+        display: block
+        span
+          &:before
+            content: '\f104'
+            display: inline-block
+            margin: 0 5px 0 0
+            font-weight: 900
+            font-family: 'Font Awesome 5 Free'
 
 @media only screen and (max-width : 480px)
-	/**/
+  .col-3
+    width: 100%
+    .card-product
+      max-width: none
+
+  .pagination
+    margin: 30px 0 0
+    li
+      &:first-child, &:last-child
+        width: 50%
+        order: 1
+        margin: 11px 0 0
+      &:first-child
+        a
+          margin: 0 19px 0 auto
 
 
 /* Custom, iPhone Retina */
