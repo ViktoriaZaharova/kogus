@@ -52,6 +52,9 @@
       p
         margin: 0 0 10px
 
+  .product-table-info__content
+    padding: 0 0 0 20px
+
 @media only screen and (max-width : 900px)
   .sidebar, .links-text, .header-top
     display: none
@@ -107,6 +110,31 @@
 
   .contacts-box
     padding: 0 18px
+
+@media only screen and (max-width : 830px)
+  .td:first-child, .th:first-child
+    width: 100%
+    padding: 0
+    margin: 0 0 10px
+
+  .tr
+    flex-wrap: wrap
+
+  .thead
+    display: none
+
+  .tbody .tr
+    padding: 20px 0
+
+  .td:nth-child(2), .th:nth-child(2), .td:nth-child(4), .th:nth-child(4)
+    width: 20%
+    text-align: center
+
+  .td:nth-child(3), .th:nth-child(3)
+    width: 50%
+
+  .quantity-wrapper
+    justify-content: center
 
 @media only screen and (max-width : 768px)
   .advantages-box
@@ -236,5 +264,18 @@
       margin: 0 auto 10px
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width : 420px)
+  .td:nth-child(2), .th:nth-child(2)
+    width: 100%
+
+  .td:nth-child(4), .th:nth-child(4)
+    width: 50%
+
+  .td
+    &:last-child
+      width: 20%
+      margin: 0 0 0 auto
+
+  .td:nth-child(3), .th:nth-child(3)
+    width: 100%
+    margin: 10px 0
