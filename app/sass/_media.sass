@@ -8,16 +8,156 @@
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width : 1100px)
+  .main-slide__content
+    margin: 0 0 0 20px
+    max-width: 400px
 
+@media only screen and (max-width : 992px)
+  .main-slide
+    padding: 40px 0 70px
+
+  .advantages-box__icon
+    width: 100px
+    height: 100px
+    padding: 25px
+
+  .advantages
+    margin: -50px 0 50px
+
+  .advantages-box
+    font-size: 14px
+
+  .search
+    max-width: 313px
 
 /* Small Devices, Tablets */
+@media only screen and (max-width : 900px)
+  .sidebar, .links-text, .header-top
+    display: none
+
+
+  .links-icon
+    margin: 0
+
+  .content
+    width: 100%
+    padding: 0
+
+  .btn-burger
+    display: flex
+
+
+
+  .mb-100
+    margin: 0 0 60px
+
+  .main-slide__img
+    position: relative
+    height: auto
+    max-width: 100%
+    width: 100%
+
+  .main-slide
+    padding: 30px 0 0
+    .btn
+      margin: 30px auto 0
+
+  .main-slide__content
+    max-width: none
+    text-align: center
+    margin: 0
+    padding: 0 15px
+
+  .main-slide__title
+    max-width: none
+    font-size: 40px
+    line-height: normal
+    padding: 0 0 20px
+    margin: 0 auto 20px
+    &:before
+      left: 50%
+      transform: translate(-50%,0)
+
+  .card-product
+    max-width: 220px
+
+  .card-product__img
+    height: 230px
+
+  .contacts-box
+    padding: 0 18px
+
 @media only screen and (max-width : 768px)
-	/**/
+  .advantages-box
+    margin: 0 auto 20px
+    h3
+      margin: 10px 0
+      font-size: 18px
+
+  .advantages-box__icon
+    width: 80px
+    height: 80px
+    padding: 20px
+
+  .advantages
+    margin: 30px auto
+
+  .logo
+    max-width: 58px
+
+  .header-center
+    padding: 13px 0 9px
 
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 660px)
+  .basket-wrapper
+    margin: 0 0 0 30px
+
+  .tooltip-wrapper
+    display: none
+
+  header
+    .search
+      display: none
+
+  .logo
+    margin: 0 auto 0 0
+
+  .mobile-menu
+    min-height: auto
+    .search
+      display: block
+      margin: 20px auto 0
+      width: calc(100% - 32px)
+
+  .contacts-box
+    flex: auto
+    width: 100%
+    border: none
+    padding: 0 30px
+    margin: 0 0 40px
+    &:last-child
+      margin: 0
+
+  .contacts-wrapper
+    padding: 39px 0
+
+@media only screen and (max-width : 575px)
+  .advantages-box
+    max-width: 100%
+
+  footer
+    padding: 65px 0 44px
+    .container
+      flex-direction: column
+      align-items: center
+
+  .menu-footer
+    margin: 37px auto 0
+
+
 @media only screen and (max-width : 480px)
 	/**/
 
@@ -25,31 +165,3 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
