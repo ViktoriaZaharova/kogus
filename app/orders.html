@@ -175,11 +175,11 @@
         <div class="greeting-user">Hi, marina svedova</div>
 
         <ul class="left-box-account">
-            <li class="active"><a href="#">
+            <li><a href="#">
                 <span class="icon"><img src="img/user.png" alt=""></span>
                 My profile
             </a></li>
-            <li><a href="#">
+            <li class="active"><a href="#">
                 <span class="icon"><img src="img/list.png" alt=""></span>
                 My orders
             </a></li>
@@ -190,74 +190,178 @@
         </ul>
 
         <div class="account-content">
-            <form method="post" class="ordering-content">
-                <div class="ordering-item">
-                    <h3>Contact person:</h3>
-
-                    <div class="form-group">
-                        <label><input type="text" placeholder="Name" name="name"></label>
-                        <label><input type="text" placeholder="Surname" name="Surname"></label>
-
+            <div class="my-orders-line">
+                <div class="my-orders-item">
+                    <div class="my-orders-item__top">
+                        <div class="my-order-id">ID: 1276367890fhrt</div>
+                        <div class="my-orders-date">22.10.2020</div>
                     </div>
-
-                    <div class="form-group">
-                        <label><input type="text" placeholder="Email" name="Email"></label>
-                        <label><input type="text" class="input-error" placeholder="Phone" name="Phone"></label>
-                    </div>
-                </div>
-
-                <div class="ordering-item">
-                    <h3>Billing Address:</h3>
-
-                    <div class="form-group">
-                        <label><input type="text" placeholder="Company name" name="name"></label>
-                        <label><input type="text" placeholder="Registration Nr." name="Surname"></label>
-                    </div>
-                    <div class="form-group">
-                        <label><input type="text" placeholder="VAT Nr." name="Email"></label>
-                        <label><input type="text" placeholder="Juridical Address" name="Phone"></label>
-                    </div>
-                    <div class="form-group">
-                        <label><input type="text" placeholder="Bank" name="Email"></label>
-                        <label><input type="text" placeholder="Bank Account" name="Phone"></label>
+                    <div class="my-orders-item__bottom">
+                        <a href="#" class="links-doc"><img src="img/pdf.png" alt="">
+                            <span class="links-text">Invoice</span>
+                        </a>
+                        <a href="#" class="links-doc"><img src="img/pdf.png" alt="">
+                            <span class="links-text">Tr.document</span>
+                        </a>
                     </div>
                 </div>
 
-                <div class="ordering-item">
-                    <h3>Shipping Address:</h3>
-
-                    <div class="form-group">
-                        <label><input type="text" placeholder="" name="name" value="Chelyabinsk"></label>
-                        <label><input type="text" placeholder="" name="Surname" value="454021"></label>
-
-                    </div>
-
-                    <label><input type="text" placeholder="Address" name="Phone"></label>
-                </div>
-
-                <div class="ordering-item">
-                    <h3>Password</h3>
-
-                    <div class="form-group">
-                        <label><input type="text" placeholder="Password" name="name"></label>
-                        <label><input type="text" placeholder="Repeat password" name="Surname"></label>
-
+                <div class="my-orders-item">
+                    <div class="processing">
+                        <img src="img/box-open.png" alt="">
+                        <p>Processing</p>
                     </div>
                 </div>
 
-                <div class="button-group">
-                    <button type="submit" class="btn btn-border-orange">Save changes</button>
-                    <div class="attention-info">
-                        <div class="attention-info__text color-red"><img src="img/attention.png" alt="">Please fill in
-                            all fields!
-                        </div>
-                        <div class="attention-info__text color-green"><i class="far fa-check-circle"></i>Thank you,
-                            information saved
-                        </div>
+                <div class="my-orders-item">
+                    <div class="total-box">
+                        <div class="label-item bg-green">paid</div>
+                        <p>Total:</p>
+                        <div class="total-sum">200.00 eur</div>
                     </div>
                 </div>
-            </form>
+            </div>
+
+            <div class="my-orders-line">
+                <div class="my-orders-item">
+                    <div class="my-orders-item__top">
+                        <div class="my-order-id">ID: 1276367890fhrt</div>
+                        <div class="my-orders-date">22.10.2020</div>
+                    </div>
+                    <div class="my-orders-item__bottom">
+                        <a href="#" class="links-doc"><img src="img/pdf.png" alt="">
+                            <span class="links-text">Invoice</span>
+                        </a>
+                        <a href="#" class="links-doc"><img src="img/pdf.png" alt="">
+                            <span class="links-text">Tr.document</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="my-orders-item">
+                    <div class="processing">
+                        <img src="img/truck.png" alt="">
+                        <p>Shipped </p>
+                    </div>
+                </div>
+
+                <div class="my-orders-item">
+                    <div class="total-box">
+                        <div class="label-item bg-green">paid</div>
+                        <p>Total:</p>
+                        <div class="total-sum">2000.00 eur</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-orders-line">
+                <div class="my-orders-item">
+                    <div class="my-orders-item__top">
+                        <div class="my-order-id">ID: 1276367890fhrt</div>
+                        <div class="my-orders-date">22.10.2020</div>
+                    </div>
+                    <div class="my-orders-item__bottom">
+                        <a href="#" class="links-doc"><img src="img/pdf.png" alt="">
+                            <span class="links-text">Invoice</span>
+                        </a>
+                        <a href="#" class="links-doc"><img src="img/pdf.png" alt="">
+                            <span class="links-text">Tr.document</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="my-orders-item">
+                    <div class="processing">
+                        <img src="img/payment.png" alt="">
+                        <p>Waiting payment</p>
+                    </div>
+                </div>
+
+                <div class="my-orders-item">
+                    <div class="total-box">
+                        <div class="label-item bg-red">not paid</div>
+                        <p>Total:</p>
+                        <div class="total-sum">2000.00 eur</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-orders-line">
+                <div class="my-orders-item">
+                    <div class="my-orders-item__top">
+                        <div class="my-order-id">ID: 1276367890fhrt</div>
+                        <div class="my-orders-date">22.10.2020</div>
+                    </div>
+                    <div class="my-orders-item__bottom">
+                        <a href="#" class="links-doc"><img src="img/pdf.png" alt="">
+                            <span class="links-text">Invoice</span>
+                        </a>
+                        <a href="#" class="links-doc"><img src="img/pdf.png" alt="">
+                            <span class="links-text">Tr.document</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="my-orders-item">
+                    <div class="processing">
+                        <img src="img/box-open.png" alt="">
+                        <p>Processing</p>
+                    </div>
+                </div>
+
+                <div class="my-orders-item">
+                    <div class="total-box">
+                        <div class="label-item bg-green">paid</div>
+                        <p>Total:</p>
+                        <div class="total-sum">200.00 eur</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-orders-line">
+                <div class="my-orders-item">
+                    <div class="my-orders-item__top">
+                        <div class="my-order-id">ID: 1276367890fhrt</div>
+                        <div class="my-orders-date">22.10.2020</div>
+                    </div>
+                    <div class="my-orders-item__bottom">
+                        <a href="#" class="links-doc"><img src="img/pdf.png" alt="">
+                            <span class="links-text">Invoice</span>
+                        </a>
+                        <a href="#" class="links-doc"><img src="img/pdf.png" alt="">
+                            <span class="links-text">Tr.document</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="my-orders-item">
+                    <div class="processing">
+                        <img src="img/truck.png" alt="">
+                        <p>Shipped </p>
+                    </div>
+                </div>
+
+                <div class="my-orders-item">
+                    <div class="total-box">
+                        <div class="label-item bg-green">paid</div>
+                        <p>Total:</p>
+                        <div class="total-sum">2000.00 eur</div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="pagination">
+                <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">25</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i></a></li>
+            </ul>
         </div>
+
+
     </div>
 </div>
 

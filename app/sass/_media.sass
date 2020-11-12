@@ -29,7 +29,7 @@
   .product-content
     width: calc(100% - 500px)
 
-  .section-account .ordering-content
+  .account-content
     padding: 30px
 
 @media only screen and (max-width : 992px)
@@ -88,7 +88,7 @@
     margin: 10px 0 0
 
 @media only screen and (max-width : 900px)
-  .sidebar, .links-text, .header-top
+  .sidebar, header .links-text, .header-top
     display: none
 
 
@@ -221,7 +221,7 @@
     padding: 0
     margin: 0 0 30px
 
-  .section-account .ordering-content
+  .account-content
     width: 100%
 
   .left-box-account
@@ -346,6 +346,16 @@
   .photo-slider-preview__item
     height: 80px
 
+
+  .my-orders-item
+    width: 50%
+    &:first-child
+      border-bottom: 1px solid #eeeeee
+      width: 100%
+
+  .total-box
+    padding: 15px 0
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 420px)
   .td:nth-child(2), .th:nth-child(2)
@@ -370,6 +380,6 @@
     max-width: none
     margin: 10px auto 0
 
-  .section-account .ordering-content
+  .account-content
     padding: 30px 20px
 
