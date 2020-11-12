@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kogus</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<header>
+    <div class="header-top">
+        <div class="container">
+            <ul class="menu">
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+
+            <a href="tel:+37038660307" class="phone">
+                Customer service: <strong>+370 386 60307</strong>
+            </a>
+        </div>
+    </div>
+
+    <div class="header-center">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+            <form method="post" class="search">
+                <label><input type="text" placeholder="Search" name="search" required></label>
+                <button type="submit"><img src="img/search.png" alt=""></button>
+            </form>
+
+            <a href="#" class="links">
+                <span class="links-icon"><img src="img/user.png" alt=""></span>
+                <span class="links-text">My account</span>
+            </a>
+
+            <a href="#" class="basket-wrapper">
+                <span class="basket-icon">
+                    <span class="basket-val">1</span>
+                    <img src="img/basket.png" alt="">
+                </span>
+                <span class="basket-total">Total: $1 200</span>
+            </a>
+
+            <div class="tooltip-wrapper">
+                <div class="icon-tooltip">!</div>
+                <div class="tooltip-box">
+                    <p>Notification!!!</p>
+                    <span>1 unpaind invoice (1000 eur)</span>
+                </div>
+            </div>
+
+            <div class="btn-burger"></div>
+        </div>
+    </div>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu__top">
+            <a href="tel:+37038660307" class="links-mobile"> <i class="fas fa-phone-alt"></i></a>
+            <a href="mailto:kogusinfo@gmail.com" class="links-mobile"><i class="fas fa-envelope"></i></a>
+            <a href="#" class="links-mobile"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+
+        <div class="mobile-menu__body">
+            <form method="post" class="search">
+                <label><input type="text" placeholder="Search" name="search" required></label>
+                <button type="submit"><img src="img/search.png" alt=""></button>
+            </form>
+
+            <a href="tel:+37038660307" class="phone">
+                Customer service: <strong>+370 386 60307</strong>
+            </a>
+            <ul class="menu-category">
+                <li class="menu-category__item">
+                    <div class="menu-category-head">
+                        <div class="menu-category-icon"><img src="img/icon4.png" alt=""></div>
+                        Dumplings with meat
+                    </div>
+                    <ul class="menu-category-submenu">
+                        <li>
+                            <a href="#">Dumplings with meat</a>
+                        </li>
+                        <li>
+                            <a href="#">Other dishes</a>
+                        </li>
+                        <li>
+                            <a href="#">For catering companies</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-category__item">
+                    <div class="menu-category-head">
+                        <div class="menu-category-icon"><img src="img/icon5.png" alt=""></div>
+                        Other dishes
+                    </div>
+                    <ul class="menu-category-submenu">
+                        <li>
+                            <a href="#">Dumplings with meat</a>
+                        </li>
+                        <li>
+                            <a href="#">Other dishes</a>
+                        </li>
+                        <li>
+                            <a href="#">For catering companies</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-category__item">
+                    <div class="menu-category-head">
+                        <div class="menu-category-icon"><img src="img/icon6.png" alt=""></div>
+                        For catering companies
+                    </div>
+                    <ul class="menu-category-submenu">
+                        <li>
+                            <a href="#">Dumplings with meat</a>
+                        </li>
+                        <li>
+                            <a href="#">Other dishes</a>
+                        </li>
+                        <li>
+                            <a href="#">For catering companies</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="menu">
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+
+        </div>
+    </div>
+</header>
+
+<div class="section-home">
+    <div class="container">
+        <h1>Ordering</h1>
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Home</a></li>
+            <li><span>Ordering</span></li>
+        </ul>
+    </div>
+</div>
+
+<div class="section-ordering mb-100">
+    <div class="container">
+        <form method="post" class="ordering-content">
+            <div class="ordering-item">
+                <h3>Contact person:</h3>
+
+                <div class="form-group">
+                    <label><input type="text" placeholder="Name" name="name"></label>
+                    <label><input type="text" placeholder="Surname" name="Surname"></label>
+
+                </div>
+
+                <div class="form-group">
+                    <label><input type="text" placeholder="Email" name="Email"></label>
+                    <label><input type="text" placeholder="Phone" name="Phone"></label>
+                </div>
+            </div>
+
+            <div class="ordering-item">
+                <h3>Billing Address:</h3>
+
+                <div class="form-group">
+                    <label><input type="text" placeholder="Company name" name="name"></label>
+                    <label><input type="text" placeholder="Registration Nr." name="Surname"></label>
+                </div>
+                <div class="form-group">
+                    <label><input type="text" placeholder="VAT Nr." name="Email"></label>
+                    <label><input type="text" placeholder="Juridical Address" name="Phone"></label>
+                </div>
+                <div class="form-group">
+                    <label><input type="text" placeholder="Bank" name="Email"></label>
+                    <label><input type="text" placeholder="Bank Account" name="Phone"></label>
+                </div>
+            </div>
+
+            <div class="ordering-item">
+                <h3>Shipping Address:</h3>
+
+                <div class="form-group">
+                    <label><input type="text" placeholder="City" name="name"></label>
+                    <label><input type="text" placeholder="Zip code" name="Surname"></label>
+
+                </div>
+
+                    <label><input type="text" placeholder="Address" name="Phone"></label>
+            </div>
+
+            <div class="ordering-item">
+                <h3>Comment</h3>
+
+                <label><textarea name="message" placeholder="Comment"></textarea></label>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn btn-accent">checkout</button>
+                <button type="submit" class="btn btn-red">hover</button>
+                <button type="submit" class="btn btn-disabled">disabled</button>
+            </div>
+        </form>
+
+        <div class="your-basket">
+            <h3>Your Basket</h3>
+
+            <div class="your-basket__box">
+                <div class="your-basket__box-line">
+                    <div class="your-basket__box-content">
+                        <h4>Traditional dumplings with meat
+                            filling</h4>
+
+                        <ul>
+                            <li>
+                                <p>EAN: 125E674 </p><span>50pcs / 100eur</span>
+                            </li>
+                            <li>
+                                <p>Net weight: 500 g.</p><strong>2000.00 eur </strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-delete"><i class="fas fa-times"></i></a>
+                </div>
+
+                <div class="your-basket__box-line">
+                    <div class="your-basket__box-content">
+                        <h4>Traditional dumplings with meat
+                            filling</h4>
+
+                        <ul>
+                            <li>
+                                <p>EAN: 125E674 </p><span>10pcs</span>
+                            </li>
+                            <li>
+                                <p>Net weight: 500 g.</p><strong>100.00 eur </strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-delete"><i class="fas fa-times"></i></a>
+                </div>
+
+                <div class="your-basket__box-line">
+                    <div class="your-basket__box-content">
+                        <h4>Traditional dumplings with meat
+                            filling</h4>
+
+                        <ul>
+                            <li>
+                                <p>EAN: 125E674 </p><span>10pcs</span>
+                            </li>
+                            <li>
+                                <p>Net weight: 500 g.</p><strong>100.00 eur </strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-delete"><i class="fas fa-times"></i></a>
+                </div>
+
+                <div class="your-basket__box-line your-basket__box-line-total">
+                    <div class="table-total-line">
+                        <p>VAT:</p>
+                        <span>5.00 eur</span>
+                    </div>
+                    <div class="table-total-line">
+                        <p>Total with VAT:</p>
+                        <span class="the-sum">2000.00 eur</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notification-item">
+                <div class="tooltip-box">
+                    <p><span class="icon-tooltip">!</span>Notification!!!</p>
+                    <span>We cannot proceed with placing your order, because previous invoice not paid!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contacts-section">
+    <div class="container">
+        <div class="contacts-wrapper">
+            <div class="contacts-box">
+                <div class="contacts-box__title">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>CONTACT US</h3>
+                </div>
+                <div class="contacts-box__body">
+                    <a href="tel:+37038660307">Tel. +370 386 60307</a>
+                    <a href="mailto:kogusinfo@gmail.com">kogusinfo@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contacts-box">
+                <div class="contacts-box__title">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>OUR ADDRESS</h3>
+                </div>
+                <div class="contacts-box__body">
+                    <p>Pramonės g. 17, Karlų km., Visagino sav., Lithuania</p>
+                </div>
+            </div>
+
+            <div class="contacts-box">
+                <div class="contacts-box__title">
+                    <i class="fas fa-clock"></i>
+                    <h3>WORKING HOURS</h3>
+                </div>
+                <div class="contacts-box__body">
+                    <p>I-V 07:00 - 15:50</p>
+                    <p>VI, VII Closed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="copyright">© 2018, Kogus. All rights reserved</div>
+        <ul class="menu-footer">
+            <li><a href="#">TERMS & CONDITIONS</a></li>
+            <li><a href="#">PRIVACY NOTICE</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
