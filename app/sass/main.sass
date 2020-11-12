@@ -1436,9 +1436,13 @@ select
     border: solid 1px #eeeeee
     height: 50px
     padding: 0 21px
-    color: #838383
-    font-size: 15px
 
+    font-size: 15px
+    color: #363636
+    &::placeholder
+      color: #838383
+  .input-error
+    border: solid 1px #c00103
   .form-group
     width: 100%
     display: flex
@@ -1548,6 +1552,78 @@ textarea
       margin: 0 10px 0 0
     span
       font-size: 15px
+
+//.account
+.greeting-user
+  width: 100%
+  margin: 0 0 28px
+  text-transform: uppercase
+  font-size: 15px
+  font-weight: bold
+  color: #363636
+
+.left-box-account
+  width: 300px
+  li
+    width: 100%
+    a
+      padding: 20px
+      display: flex
+      align-items: center
+      border-bottom: 1px solid #eeeeee
+      width: calc(100% - 30px)
+      color: #363636
+      font-size: 15px
+
+    &:last-child
+      a
+        border: none
+    .color-orange
+      font-weight: bold
+      color: $orange
+  .active
+    background: #f5f5f5
+    a
+      border: none
+  .icon
+    margin: 0 19px 0 0
+
+.section-account
+  .ordering-content
+    background: #f5f5f5
+    width: calc(100% - 300px)
+    padding: 59px 106px 69px
+    .button-group
+      margin: 0
+      align-items: flex-start
+      .btn
+        margin: 0
+        font-weight: bold
+        height: 40px
+        max-width: 230px
+    .btn-border-orange
+      border: solid 1px #f6a525
+      color: $orange
+
+
+.color-red
+  color: #bb0103
+
+.color-green
+  color: #93d68a
+
+.attention-info
+  margin: 0 auto 0 35px
+
+.attention-info__text
+  display: flex
+  align-items: center
+  font-size: 15px
+  margin: 0 0 10px
+  &:last-child
+    margin: 0
+  img, i
+    margin: 0 10px 0 0
 
 @import "media"
 // Всегда в конце

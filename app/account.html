@@ -162,16 +162,33 @@
 
 <div class="section-home">
     <div class="container">
-        <h1>Ordering</h1>
+        <h1>My account</h1>
         <ul class="breadcrumbs">
             <li><a href="index.html">Home</a></li>
-            <li><span>Ordering</span></li>
+            <li><span>My account</span></li>
         </ul>
     </div>
 </div>
 
-<div class="section-ordering mb-100">
+<div class="section-account mb-100">
     <div class="container">
+        <div class="greeting-user">Hi, marina svedova</div>
+
+        <ul class="left-box-account">
+            <li class="active"><a href="#">
+                <span class="icon"><img src="img/user.png" alt=""></span>
+                My profile
+            </a></li>
+            <li><a href="#">
+                <span class="icon"><img src="img/list.png" alt=""></span>
+                My orders
+            </a></li>
+            <li><a href="#" class="color-orange">
+                <span class="icon"><img src="img/exit.png" alt=""></span>
+                Logout
+            </a></li>
+        </ul>
+
         <form method="post" class="ordering-content">
             <div class="ordering-item">
                 <h3>Contact person:</h3>
@@ -209,8 +226,8 @@
                 <h3>Shipping Address:</h3>
 
                 <div class="form-group">
-                    <label><input type="text" placeholder="City" name="name"></label>
-                    <label><input type="text" placeholder="Zip code" name="Surname"></label>
+                    <label><input type="text" placeholder="" name="name" value="Chelyabinsk"></label>
+                    <label><input type="text" placeholder="" name="Surname" value="454021"></label>
 
                 </div>
 
@@ -218,92 +235,24 @@
             </div>
 
             <div class="ordering-item">
-                <h3>Comment</h3>
+                <h3>Password</h3>
 
-                <label><textarea name="message" placeholder="Comment"></textarea></label>
+                <div class="form-group">
+                    <label><input type="text" placeholder="Password" name="name"></label>
+                    <label><input type="text" placeholder="Repeat password" name="Surname"></label>
+
+                </div>
             </div>
 
             <div class="button-group">
-                <button type="submit" class="btn btn-accent">checkout</button>
-                <button type="submit" class="btn btn-red">hover</button>
-                <button type="submit" class="btn btn-disabled">disabled</button>
+                <button type="submit" class="btn btn-border-orange">Save changes</button>
+<div class="attention-info">
+    <div class="attention-info__text color-red"><img src="img/attention.png" alt="">Please fill in all fields!</div>
+    <div class="attention-info__text color-green"><i class="far fa-check-circle"></i>Thank you, information saved</div>
+</div>
             </div>
         </form>
 
-        <div class="your-basket">
-            <h3>Your Basket</h3>
-
-            <div class="your-basket__box">
-                <div class="your-basket__box-line">
-                    <div class="your-basket__box-content">
-                        <h4>Traditional dumplings with meat
-                            filling</h4>
-
-                        <ul>
-                            <li>
-                                <p>EAN: 125E674 </p><span>50pcs / 100eur</span>
-                            </li>
-                            <li>
-                                <p>Net weight: 500 g.</p><strong>2000.00 eur </strong>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="#" class="btn-delete"><i class="fas fa-times"></i></a>
-                </div>
-
-                <div class="your-basket__box-line">
-                    <div class="your-basket__box-content">
-                        <h4>Traditional dumplings with meat
-                            filling</h4>
-
-                        <ul>
-                            <li>
-                                <p>EAN: 125E674 </p><span>10pcs</span>
-                            </li>
-                            <li>
-                                <p>Net weight: 500 g.</p><strong>100.00 eur </strong>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="#" class="btn-delete"><i class="fas fa-times"></i></a>
-                </div>
-
-                <div class="your-basket__box-line">
-                    <div class="your-basket__box-content">
-                        <h4>Traditional dumplings with meat
-                            filling</h4>
-
-                        <ul>
-                            <li>
-                                <p>EAN: 125E674 </p><span>10pcs</span>
-                            </li>
-                            <li>
-                                <p>Net weight: 500 g.</p><strong>100.00 eur </strong>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="#" class="btn-delete"><i class="fas fa-times"></i></a>
-                </div>
-
-                <div class="your-basket__box-line your-basket__box-line-total">
-                    <div class="table-total-line">
-                        <p>VAT:</p>
-                        <span>5.00 eur</span>
-                    </div>
-                    <div class="table-total-line">
-                        <p>Total with VAT:</p>
-                        <span class="the-sum">2000.00 eur</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="notification-item">
-                <div class="tooltip-box">
-                    <p><span class="icon-tooltip">!</span>Notification!!!</p>
-                    <span>We cannot proceed with placing your order, because previous invoice not paid!</span>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 

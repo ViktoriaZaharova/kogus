@@ -1588,8 +1588,18 @@ select {
     border: solid 1px #eeeeee;
     height: 50px;
     padding: 0 21px;
-    color: #838383;
-    font-size: 15px; }
+    font-size: 15px;
+    color: #363636; }
+    .ordering-content input::-webkit-input-placeholder {
+      color: #838383; }
+    .ordering-content input::-moz-placeholder {
+      color: #838383; }
+    .ordering-content input::-ms-input-placeholder {
+      color: #838383; }
+    .ordering-content input::placeholder {
+      color: #838383; }
+  .ordering-content .input-error {
+    border: solid 1px #c00103; }
   .ordering-content .form-group {
     width: 100%;
     display: -webkit-box;
@@ -1726,6 +1736,83 @@ textarea {
   .notification-item .tooltip-box span {
     font-size: 15px; }
 
+.greeting-user {
+  width: 100%;
+  margin: 0 0 28px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  color: #363636; }
+
+.left-box-account {
+  width: 300px; }
+  .left-box-account li {
+    width: 100%; }
+    .left-box-account li a {
+      padding: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border-bottom: 1px solid #eeeeee;
+      width: calc(100% - 30px);
+      color: #363636;
+      font-size: 15px; }
+    .left-box-account li:last-child a {
+      border: none; }
+    .left-box-account li .color-orange {
+      font-weight: bold;
+      color: #f6a525; }
+  .left-box-account .active {
+    background: #f5f5f5; }
+    .left-box-account .active a {
+      border: none; }
+  .left-box-account .icon {
+    margin: 0 19px 0 0; }
+
+.section-account .ordering-content {
+  background: #f5f5f5;
+  width: calc(100% - 300px);
+  padding: 59px 106px 69px; }
+  .section-account .ordering-content .button-group {
+    margin: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .section-account .ordering-content .button-group .btn {
+      margin: 0;
+      font-weight: bold;
+      height: 40px;
+      max-width: 230px; }
+  .section-account .ordering-content .btn-border-orange {
+    border: solid 1px #f6a525;
+    color: #f6a525; }
+
+.color-red {
+  color: #bb0103; }
+
+.color-green {
+  color: #93d68a; }
+
+.attention-info {
+  margin: 0 auto 0 35px; }
+
+.attention-info__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  margin: 0 0 10px; }
+  .attention-info__text:last-child {
+    margin: 0; }
+  .attention-info__text img, .attention-info__text i {
+    margin: 0 10px 0 0; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1746,7 +1833,9 @@ textarea {
   .product-photos {
     width: 500px; }
   .product-content {
-    width: calc(100% - 500px); } }
+    width: calc(100% - 500px); }
+  .section-account .ordering-content {
+    padding: 30px; } }
 
 @media only screen and (max-width: 992px) {
   .main-slide {
@@ -1786,7 +1875,10 @@ textarea {
       .section-login__box-info .box-text p {
         margin: 0 0 10px; }
   .product-table-info__content {
-    padding: 0 0 0 20px; } }
+    padding: 0 0 0 20px; }
+  .attention-info {
+    width: 100%;
+    margin: 10px 0 0; } }
 
 @media only screen and (max-width: 900px) {
   .sidebar, .links-text, .header-top {
@@ -1895,7 +1987,11 @@ textarea {
   .ordering-content {
     width: 100%;
     padding: 0;
-    margin: 0 0 30px; } }
+    margin: 0 0 30px; }
+  .section-account .ordering-content {
+    width: 100%; }
+  .left-box-account {
+    width: 100%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 660px) {
@@ -2028,4 +2124,6 @@ textarea {
     padding: 20px; }
   .ordering-content .btn {
     max-width: none;
-    margin: 10px auto 0; } }
+    margin: 10px auto 0; }
+  .section-account .ordering-content {
+    padding: 30px 20px; } }
