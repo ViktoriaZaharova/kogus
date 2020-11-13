@@ -232,6 +232,8 @@ header {
       margin: 0 7px; }
     .menu li a:hover {
       color: #990100; }
+  .menu li:last-child a:after {
+    display: none; }
 
 .phone {
   color: #838383;
@@ -275,11 +277,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: #363636; }
-  .links:hover {
-    color: #990100; }
-
-.links-icon {
-  margin: 0 16px 0 0; }
 
 .basket-wrapper {
   display: -webkit-box;

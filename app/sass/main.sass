@@ -214,6 +214,10 @@ header
 
       &:hover
         color: $accent
+    &:last-child
+      a
+        &:after
+          display: none
 
 .phone
   color: #838383
@@ -251,12 +255,6 @@ header
   display: flex
   align-items: center
   color: #363636
-
-  &:hover
-    color: $accent
-
-.links-icon
-  margin: 0 16px 0 0
 
 .basket-wrapper
   display: flex
