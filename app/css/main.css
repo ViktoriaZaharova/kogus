@@ -372,16 +372,23 @@ header {
     margin: 0 0 10px; }
 
 main {
-  background: #990100;
+  background: url("../img/bg-banner.png") no-repeat center;
+    background-size: cover;
   border-top: 3px solid #f6a525; }
 
 .main-slider {
   width: 100%; }
 
 .main-slide {
-  padding: 67px 0 120px;
+  padding: 67px 0 0;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .main-slide .btn {
     margin: 31px 0 0;
     max-width: 170px; }
@@ -412,11 +419,7 @@ main {
   margin: 0 0 0 70px; }
 
 .main-slide__img {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  max-width: none; }
+  max-width: 100%; }
 
 .slick-dotted.slick-slider {
   margin-bottom: 0; }
@@ -1985,7 +1988,11 @@ textarea {
   .photo-slider-preview .slick-prev {
     left: 0; }
   .ordering-content {
-    padding: 0 30px 0 0; } }
+    padding: 0 30px 0 0; }
+  .main-slide__img {
+    max-width: 400px; }
+  .main-slide {
+    padding: 67px 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 930px) {
@@ -2020,15 +2027,8 @@ textarea {
     display: flex; }
   .mb-100 {
     margin: 0 0 60px; }
-  .main-slide__img {
-    position: relative;
-    height: auto;
-    max-width: 100%;
-    width: 100%; }
-  .main-slide {
-    padding: 30px 0 0; }
-    .main-slide .btn {
-      margin: 30px auto 0; }
+  .main-slide .btn {
+    margin: 30px auto 0; }
   .main-slide__content {
     max-width: none;
     text-align: center;
@@ -2144,7 +2144,18 @@ textarea {
     .contacts-box:last-child {
       margin: 0; }
   .contacts-wrapper {
-    padding: 39px 0; } }
+    padding: 39px 0; }
+  .main-slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .main-slide__img {
+    margin: 20px auto 0;
+    max-width: 100%; } }
 
 @media only screen and (max-width: 575px) {
   .advantages-box {

@@ -331,16 +331,19 @@ header
 
 //main
 main
-  background: #990100
+  background: url("../img/bg-banner.png") no-repeat center
+    size: cover
   border-top: 3px solid #f6a525
 
 .main-slider
   width: 100%
 
 .main-slide
-  padding: 67px 0 120px
+  padding: 67px 0 0
   position: relative
   width: 100%
+  display: flex
+  align-items: center
 
   .btn
     margin: 31px 0 0
@@ -373,11 +376,7 @@ main
   margin: 0 0 0 70px
 
 .main-slide__img
-  position: absolute
-  right: 0
-  top: 0
-  height: 100%
-  max-width: none
+  max-width: 100%
 
 .slick-dotted.slick-slider
   margin-bottom: 0
