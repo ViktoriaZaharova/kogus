@@ -188,6 +188,7 @@ label
 //header
 header
   position: relative
+  z-index: 1
 
 .header-top
   background: #f5f5f5
@@ -525,19 +526,20 @@ h2
     margin: 0 21px 0 0
 
 .menu-category__item
-
+  border-bottom: 1px solid #eeeeee
   &:nth-child(even)
     background: #f5f5f5
 
   &:last-child
     border: none
 
+
 .menu-category-submenu
   padding: 19px 20px 19px 29px
   font-size: 15px
   background: #ffffff
   display: none
-  border-bottom: 1px solid #eeeeee
+  border-top: 1px solid #eeeeee
 
   li
     margin: 0 0 25px
@@ -571,8 +573,8 @@ h2
   align-items: center
   padding: 20px 13px 20px 16px
   color: #363636
-  border-bottom: 1px solid #eeeeee
   cursor: pointer
+
 
   &:after
     content: '\f107'
@@ -586,6 +588,9 @@ h2
   margin: 0 17px 0 0
   width: 25px
   height: 25px
+
+.compensate-for-scrollbar
+  margin: 0 !important
 
 .card-product
   border: solid 1px #eeeeee
@@ -976,7 +981,7 @@ h1
   color: $orange
   font-size: 20px
   margin: 0 0 0 20px
-
+  width: 17px
   &:before
     content: '\f0c9'
     font-weight: 900

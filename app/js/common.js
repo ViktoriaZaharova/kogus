@@ -21,6 +21,12 @@ $('.special-slider').slick({
             }
         },
         {
+            breakpoint: 670,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
             breakpoint: 480,
             settings: {
                 slidesToShow: 1,
@@ -46,7 +52,7 @@ $('.other-slider').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 670,
             settings: {
                 slidesToShow: 2,
             }
@@ -75,6 +81,12 @@ $('.new-products-slider').slick({
             breakpoint: 900,
             settings: {
                 slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 670,
+            settings: {
+                slidesToShow: 2,
             }
         },
         {
