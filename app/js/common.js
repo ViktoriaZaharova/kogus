@@ -113,8 +113,8 @@ $('.photo-slider-preview').slick({
     infinite: false
 });
 
-$('.menu-category__item').click(function () {
-   $(this).find('.menu-category-submenu').slideToggle();
+$('.menu-category__item-drop').click(function () {
+   $(this).toggleClass('active');
 });
 
 $('.btn-burger').click(function () {
